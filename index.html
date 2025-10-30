@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Gizi Makanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Kalori Makanan</h1>
+        
+        <form id="foodForm">
+            <label for="foodName">Nama Makanan:</label>
+            <input type="text" id="foodName" required>
+
+            <label for="caloriesPerServing">Kalori per Porsi (kkal):</label>
+            <input type="number" id="caloriesPerServing" min="1" required>
+
+            <label for="servings">Jumlah Porsi:</label>
+            <input type="number" id="servings" min="0.1" step="0.1" required>
+
+            <button type="submit">Tambahkan Makanan</button>
+        </form>
+
+        <hr>
+
+        <h2>Makanan yang Dikonsumsi</h2>
+        <ul id="foodList">
+            </ul>
+
+        <hr>
+
+        <div class="total-section">
+            <p>Total Kalori: <span id="totalCalories">0</span> kkal</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
